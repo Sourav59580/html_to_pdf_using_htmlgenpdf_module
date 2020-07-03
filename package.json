@@ -1,0 +1,15 @@
+{
+  "name": "htmltopdf",
+  "version": "1.0.0",
+  "description": "This is a simple pdf creator from html file",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sourav",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "html-gen-pdf": "^1.0.0"
+  }
+}

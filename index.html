@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Select a Delivery Address</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    
+</head>
+
+<body>
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-2 text-center">
+                <img src="https://www.atlassian.com/dam/jcr:ba03a215-2f45-40f5-8540-b2015223c918/Max-R_Headshot%20(1).jpg" height="90px" />
+            </div>
+            <div class="col-md-6 pt-4">
+                <div class="progress" style="height: 20px;">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 25%" aria-valuenow="15"
+                        aria-valuemin="0" aria-valuemax="100"><span><i class="fa fa-check-circle text-success"
+                                aria-hidden="true"></i> SIGN IN</span> </div>
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 25%" aria-valuenow="30"
+                        aria-valuemin="0" aria-valuemax="100"><span>PLACE ORDER </span></div>
+                    <div class="progress-bar bg-secondary" role="progressbar" style="width: 25%" aria-valuenow="20"
+                        aria-valuemin="0" aria-valuemax="100">PAYMENT</div>
+                    <div class="progress-bar bg-secondary" role="progressbar" style="width: 25%" aria-valuenow="20"
+                        aria-valuemin="0" aria-valuemax="100">COMPLETE</div>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+
+    <div class="container-fluid px-4">
+        <div class="container px-4">
+            <h3>Add a new address</h3>
+            <p>Be sure to click "Deliver to this address" when you've finished.</p>
+        </div>
+        <hr>
+        <div class="container mb-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <form class="deliveryAddressForm">
+                        <div class="form-group">
+                            <label for="fullname">Full Name<span class="text-danger">*</span> : </label>
+                            <input type="text" name="fullname" id="fullname" class="form-control" required='required'>
+                        </div>
+                        <div class="form-group">
+                            <label for="mobile">Mobile Number<span class="text-danger">*</span> : </label>
+                            <input type="text" name="mobile" id="mobile" class="form-control" required='required'>
+                        </div>
+                        <div class="form-group">
+                            <label for="pincode">Pincode<span class="text-danger">*</span> : </label>
+                            <input type="text" name="pincode" id="pincode" class="form-control" required='required'>
+                        </div>
+                        <div class="form-group">
+                            <label for="house">Flat, House no., Building, Company, Apartment<span
+                                    class="text-danger">*</span> : </label>
+                            <input type="text" name="house" id="house" class="form-control" required='required'>
+                        </div>
+                        <div class="form-group">
+                            <label for="street">Area, Colony, Street, Sector, Village<span class="text-danger">*</span>
+                                : </label>
+                            <input type="text" name="street" id="street" class="form-control" required='required'>
+                        </div>
+                        <div class="form-group">
+                            <label for="landmark">Landmark e.g. near apollo hospital<span class="text-danger">*</span> :
+                            </label>
+                            <input type="text" name="landmark" id="landmark" class="form-control" required='required'>
+                        </div>
+                        <div class="form-group">
+                            <label for="city">Town/City<span class="text-danger">*</span> : </label>
+                            <input type="text" name="city" id="city" class="form-control" required='required'>
+                        </div>
+                        <div class="form-group">
+                            <label for="state">State<span class="text-danger">*</span> : </label>
+                            <input type="text" name="state" id="state" class="form-control" required='required'>
+                        </div>
+                        <button type="submit" class="btn btn-warning mb-4 float-right">Deliver to this address</button>
+                    </form>
+                </div>
+                <div class="col-md-6"></div>
+            </div>
+        </div>
+    </div>
+    </body>
+    </html>
